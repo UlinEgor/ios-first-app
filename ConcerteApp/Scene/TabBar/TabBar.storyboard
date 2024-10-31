@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ez7-2o-xYY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ez7-2o-xYY">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +15,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nH0-S6-Myc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-49" y="-592"/>
+            <point key="canvasLocation" x="-313" y="-540"/>
         </scene>
         <!--Cat-->
         <scene sceneID="pdE-jy-Xc8">
@@ -34,7 +34,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P04-Z9-RTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-825" y="-592"/>
+            <point key="canvasLocation" x="-932" y="-540"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="NoG-Eo-lQR">
@@ -47,11 +47,41 @@
                     </tabBar>
                     <connections>
                         <segue destination="bUH-lw-GBU" kind="relationship" relationship="viewControllers" id="Shn-3v-jSm"/>
+                        <segue destination="K5R-dj-p5f" kind="relationship" relationship="viewControllers" id="QMI-5Z-FKf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iz1-gJ-dYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2024" y="-239"/>
+        </scene>
+        <!--Cat with text-->
+        <scene sceneID="Kh9-77-L9U">
+            <objects>
+                <navigationController id="K5R-dj-p5f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cat with text" image="cat.circle" catalog="system" id="R1V-cm-r5Q">
+                        <imageReference key="selectedImage" image="cat.circle.fill" catalog="system" renderingMode="template"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HDE-lx-ICU">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Jkb-QA-DLS" kind="relationship" relationship="rootViewController" id="mzL-CA-fXt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJp-t1-1Qj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-932" y="117"/>
+        </scene>
+        <!--TextedCat-->
+        <scene sceneID="FMc-u1-AUp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TextedCat" id="Jkb-QA-DLS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Y95-Yi-Wm7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wzw-F5-NWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-256" y="117"/>
         </scene>
     </scenes>
     <resources>
